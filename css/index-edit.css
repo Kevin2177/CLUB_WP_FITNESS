@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300;400;700&display=swap');
+/*
+
+Tekko
+    weight:
+    300 - light
+    400 - normal
+    700 - bold
+
+*/
+
+:root{
+    --letraEnunciados: 'Bebas Neue', cursive;
+    --letraTextos: 'Teko', sans-serif;
+    --color-azul-primario : #2174d4;
+
+}
+
+*{
+    font-family: var(--letraTextos);    
+    color: #fff;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/Fondo-principal.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Barra superior (HEADER) - Seccion Incio */
+.titulo{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.titulo span{
+    color: var(--color-azul-primario);
+    font-size: 30px;
+}
+
+.menu a{
+    font-size: 23px;
+    font-weight: 400;
+    transition: all .3s;
+}
+
+.menu a:hover{
+    color: var(--color-azul-primario);
+}
+
+/* Frase - Seccion Incio */
+.frase{
+    margin-top: 35vh;
+    margin-left: 9%;
+}
+
+.frase span{
+    font-family: var(--letraEnunciados);
+    color: var(--color-azul-primario);
+    top: -70px;
+    font-size: 95px;
+    left: .8em;
+    z-index: -1;
+    letter-spacing: 20px;
+}
+
+.text p{
+    font-family: var(--letraEnunciados);
+    font-size: 27px;
+}
+
+/* Redes social - Seccion Incio */
+.enlaces a{
+    margin: 1.8em 0;
+}
+
+.enlaces a i{
+    color: var(--color-azul-primario);
+    font-size: 35px;
+}
+.enlaces a:hover{
+    filter: blur(5);
+}
+
+.enlaces li i:hover{
+    transform: scale(1.2);
+    text-shadow: 3px 2px 5px white;
+}
+
+/* Section de Instalaciones */
+
+#section-instalaciones h2{
+    font-size: 45px;
+}
+.texto-mapa h3{
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.texto-mapa p{
+    font-size: 23px;
+    font-weight: 300;
+}
+
+/* Estilos  de interaccion */
+
+.link-activo{
+    color: var(--color-azul-primario);
+}
+
+.page{
+    display: none;
+    visibility: hidden;
+}
+
+.page-activa{
+    display: block;
+    visibility: visible;
+}
