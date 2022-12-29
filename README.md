@@ -1,13 +1,11 @@
 # CLUB_WP_FITNESS
                           -- SECTION INICO--
                           
-1.- Poner enlaces a las redes
+1.- Hacer funcionar el enlace al Telefono
 
 
                           -- SECTION INSTALACIONES--
-                          
-1.- Terminas estilo (css)
-2.- Agregar fotografias
+1.- Agregar fotografias reales
 
                           -- SECTION SERVICIOS--
                           
