@@ -105,6 +105,25 @@ body{
     font-weight: 300;
 }
 
+/* Section de Servicios */
+
+#section-servicios h2{
+    font-size: 45px;
+}
+
+.card{
+    height: 300px;
+}
+
+.servicios-texto h3{
+    font-size: 28px;
+}
+
+.servicios-texto p{
+    font-size: 22px;
+}
+
+
 /* Estilos  de interaccion */
 
 .link-activo{

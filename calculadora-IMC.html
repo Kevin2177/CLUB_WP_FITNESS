@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/imc-edit.css">
+
+    <link rel="shortcut icon" href="./img/icono-pagina.png">
+    <title>CLUB WP FITNESS | CALCULAR IMC</title>
+</head>
+<body>
+    <div class="formulario">
+        <form action="#">
+            <h1>Calcula tu IMC</h1>
+            
+            <label for="UMPeso">Unidad medida Peso: </label>
+            <select name="UM" id="UMPeso">
+                <option value="kg">Kilogramo (kg) </option>                
+                <option value="lb">Libra (lb) <option>
+            </select>
+
+            <label for="UMEstatura">Unidad medida estatura: </label>
+            <select name="UM" id="UMEstatura">
+                <option value="cm">Centimetro (cm) </option>                
+                <option value="m">Metro (m) </option>
+                <option value="ft">Pie (ft) </option>
+                <option value="yd">Yarda (yd) </option>
+            </select>
+
+            <label for="peso" id="lblPeso">Peso (kg)</label>
+            <input type="number" placeholder="Escriba su peso" id="peso">
+            <label for="altura" id="lblAltura">Altura (cm)</label>
+            <input type="number" placeholder="Escriba su altura" id="altura">
+            <input type="submit" value="Calcular IMC" id="button">
+
+            <div class="result" id="resultado">
+                
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/calculadora.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

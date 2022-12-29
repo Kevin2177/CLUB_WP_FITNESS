@@ -45,18 +45,21 @@ function comprobarPaginaAbierta(){
         links[1].classList.remove('link-activo');
         links[2].classList.remove('link-activo');
 
+        document.title = 'CLUB WP FITNESS | INICIO';
         body.style.backgroundImage = "url('../img/Fondo-principal.jpg')";
     }else if(paginaInstalaciones.classList.contains('page-activa')){
         links[0].classList.remove('link-activo');
         links[1].classList.add('link-activo');
         links[2].classList.remove('link-activo');
 
+        document.title = 'CLUB WP FITNESS | INSTALACIONES';
         body.style.backgroundImage = "url('../img/Fondo-Instalaciones.jpg')";
     }else if(paginaServicios.classList.contains('page-activa')){
         links[0].classList.remove('link-activo');
         links[1].classList.remove('link-activo');
         links[2].classList.add('link-activo');
 
+        document.title = 'CLUB WP FITNESS | SERVICIOS';
         body.style.backgroundImage = "url('../img/Fondo-servicios.jpg')";
     }
 }
