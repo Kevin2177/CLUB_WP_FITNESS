@@ -2,6 +2,7 @@
                           -- SECTION INICO--
                           
 1.- Hacer funcionar el enlace al Telefono
+2.- Corregir error de pagina (link) activo de la barra de navegación
 
 
                           -- SECTION INSTALACIONES--
@@ -9,6 +10,4 @@
 
                           -- SECTION SERVICIOS--
                           
-1.- Empezar HTML
-2.- Agregar CSS
-3.- Funciones necesarias en JS
+1.- Validar página
