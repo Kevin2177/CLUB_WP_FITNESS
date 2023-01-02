@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <link rel="stylesheet" href="css/index-edit.css">
+    <!-- <link rel="stylesheet" href="css/index-media.css"> -->
     <link rel="stylesheet" href="font-awesome/css/fontawesome.css">
     <link rel="stylesheet" href="font-awesome/css/solid.css">
     <link rel="stylesheet" href="font-awesome/css/brands.css">
@@ -14,19 +16,42 @@
     <title>CLUB WP FITNESS | INICIO</title>
 </head>
 <body id="body">
-    <header class="fixed flex items-center mt-5 relative w-full"> 
-        <h1 class="titulo ml-10">CLUB WP FITNESS <span class="fa-solid fa-dumbbell ml-3"></span></h1>
-        
-        <div class="menu inline-flex space-x-6 absolute top-0 right-20">
-            <a href="#" class="p-1 rounded">Inicio</a>
-            <a href="#" class="p-1 rounded">Instalaciones</a>
-            <a href="#" class="p-1 rounded">Servicios</a>
-            <a href="./calculadora-IMC.html" target="_blank" class="p-1 rounded">Calcular IMC</a>
-            <a href="#" class="p-1 rounded">Más info</a>
+
+    <!-- Barra de navegación y logo -->
+    <header> 
+      
+      <nav class="mt-2 px-2 sm:px-4 py-2.5">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <h1 class="titulo z-20 ml-10 flex">CLUB WP FITNESS <span class="fa-solid fa-dumbbell ml-3"></span></h1>
+          <button data-collapse-toggle="navbar-default" type="button" class="btn-menu z-20 inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div class="w-full md:block md:w-auto hidden z-10" id="navbar-default">
+            <ul class="ul-nav flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  ">
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 md:p-0">Inicio</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 md:p-0">Instalaciones</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 md:p-0">Servicios</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 md:p-0">Calcular IMC</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 md:p-0">Mas info</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
     </header>
 
-    <div class="page relative " id="section-inicio">
+    <div class="page relative page-activa z-0" id="section-inicio">
         <div class="frase relative w-2/6 text-center">
             <span class="absolute w-1/5">Fuerza</span>
             
@@ -105,7 +130,7 @@
     
     </div>
 
-    <div class="page page-activa relative mx-auto text-center" id="section-servicios">
+    <div class="page relative mx-auto text-center" id="section-servicios">
         <h2 class="mt-16">Servicios</h2>
 
         <div class="servicios-simples w-full">
@@ -145,7 +170,7 @@
                 <h5 class="card-title">Entrenamiento personalizado</h5>
                 <p class="card-text">Rutinas de entrenamiento personalizadas, acorde a tus obejivos y metas.</p>
                 <p>¡ Rutinas completamente analizadas y efectivas !</p>
-                <a href="#" class="btn mt-1">Cotizar</a>
+                <a href="https://wa.me/3324246651?text=Hola%20me%20gustaria%20pedir%20información%20acerca%20de%20los%20planes%20de%20entrenamiento" class="btn mt-1">Cotizar</a>
               </div>
             </div>
 
@@ -157,7 +182,7 @@
                 <p class="card-text">Planes alimenticios formados para todos tus propositos (ganar masa muscular, bajar de peso, recomposición corporal). Así como 
                   dietas específicas para veganos, vegetarianos, etc.
                 </p>
-                <a href="#" class="btn mt-1">Cotizar</a>
+                <a href="https://wa.me/3324246651?text=Hola%20me%20gustaria%20pedir%20información%20sobre%20las%20planes%20de%20alimentación" class="btn mt-1">Cotizar</a>
               </div>
             </div>
 
@@ -167,7 +192,7 @@
               <div class="card-body">
                 <h5 class="card-title">Asesorías completas</h5>
                 <p class="card-text">Dietas y planes de entrenamientos eficaces para todas las personas. Contamos con chequeos constantes, atención 24/7 para cualquier duda, dietas flexibles y adaptadas y mucho más...</p>
-                <a href="#" class="btn mt-1">Cotizar</a>
+                <a href="https://wa.me/3324246651?text=Hola%20estoy%20interesado%20en%20las%20asesorias%20completas%20(Dieta%20y%20entrenamiento)%20me%20podiras%20brindar%20más%20informacion" class="btn mt-1">Cotizar</a>
               </div>
             </div>
 
@@ -178,13 +203,33 @@
         
     </div>
 
+    <!-- FALTA TERMINAR -->
     <div class="page relative mx-auto text-center" id="section-info">
-      <h2 class="mt-16">Más info...</h2>
+      <h2 class="mt-16">Acerca de nosotros...</h2>
 
+      <div class="card mb-3 w-3/4 mx-9">
+        
+        <div class="row no-gutters">
+          <div class="col-md-4 ">
+            <img src="./img/perfil.jpg" class="card-img" alt="">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Lic. Christian Esparza</h5>
+              <p class="card-text">Entrenador y licenciado en la eduación fisica y del deporte, ......</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+      </div>
 
     </div>
 
+    
     <script src="./js/inicializador.js" type="module"></script>
+    <!-- <script src="./js/adaptaciones/adaptaciones.js" type="module"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
@@ -192,46 +237,10 @@
 </html>
 
 
-<!--
+<!-- 
 
-  servicios premium / Estilo anterior
+  Pendientes
+  Falta corregir error que no muestra cual section (link) esta activo:
 
-  <div class="container mx-auto mt-9 my-9">
-            <div class="grid gap-3 grid-cols-3">
 
-                <div class="card-premium mx-9  relative">
-                  <img src="./img/servicios-1.jpg" alt="" class="rounded-xl w-full h-52 object-cover">
-                  <div class="text-card text-left">
-                    <h3 class="text-3xl">Entrenamientos personalizados</h3>
-                    <p class="px-6 text-xl tracking-wide mt-4">Planes de entrenamientos personales de acuerdo a tus objetivos, experiencia y capacidades para que obtengas un avance más rapido y con la mejor calidad.</p>
-                    <button id="btnEntrenamientos" class="my-1 absolute bottom-2">Más información</button>
-                  </div>
-                </div>
-                
-                <div class="card-premium mx-9 relative">
-                  <img src="./img/servicios-1.jpg" alt="" class="rounded-xl w-full h-52 object-cover">
-                  <div class="text-card text-left">
-                    <h3 class="text-3xl">Dietas personalizados</h3>
-                    <p class="px-6 text-xl tracking-wide mt-4">Dietas totalmente personalizadas para que puedas cumplir tus metas ya sea: perder peso, ganar masa muscular, ponerte en forma.
-                      Comidas personalizadas a tus preferencias (Vegano, vegetariano, etc...) 
-                      <br><span class="text-2xl">¡ no pierdas el tiempo con dietas estrictas !</span> 
-                    </p>
-                    <button id="btnDietas" class="my-1 absolute bottom-2">Más información</button>
-                  </div>
-                </div>
-
-                <div class="card-premium mx-9 relative">
-                  <img src="./img/servicios-1.jpg" alt="" class="rounded-xl w-full h-52 object-cover">
-                  <div class="text-card text-left">
-                    <h3 class="text-3xl">Asesorias completas</h3>
-                    <p class="px-6 text-xl tracking-wide mt-4">Dietas y entrenamientos ambos hechos con delicadeza y planteados perfectamente a tus medidas y a tus metas,
-                      monitoreando tu progreso constantemente. <br> <span class="text-2xl">Mejora tu salud y estado físico</span> 
-                    </p>
-                    <button id="btnConsultorias" class="my-1 absolute bottom-2">Más información</button>
-                  </div>
-                </div>
-
-                  
-            </div>
-          </div>
 -->

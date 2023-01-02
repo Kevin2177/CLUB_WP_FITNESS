@@ -1,0 +1,29 @@
+ @media screen and (max-width: 900px){
+    /* 
+        INICIA -- HEADER --
+    */
+    header{
+        display: block;
+        margin-top: 10px;
+        align-items: center;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    header .menu{
+        width: 100%;
+        left: 0;
+        margin-top: 45px;
+        justify-content: center;
+    }
+    /* 
+        TERMINA -- HEADER --
+    */
+}
+
+@media screen and (max-width: 900px){
+
+
+} 
