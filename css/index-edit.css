@@ -28,6 +28,8 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    
 }
 
 /* Barra superior (HEADER) - Seccion Incio */
@@ -111,17 +113,90 @@ body{
     font-size: 45px;
 }
 
-.card{
+.card-simples{
     height: 300px;
 }
 
 .servicios-texto h3{
-    font-size: 28px;
+    font-size: 2.2em;
+    color: var(--color-azul-primario);
 }
 
 .servicios-texto p{
-    font-size: 22px;
+    font-size: 1.6em;
+    font-weight: 300;
 }
+
+.servicios-texto p span{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.card-premium{
+    background-color: rgba(0, 0, 0, 0.664);
+    color: rgb(255, 255, 255);
+    border-radius: 20px 20px 0 0;
+    height: 505px;
+    box-shadow: 5px 10px 5px rgb(24, 24, 24);
+}
+
+.text-card h3{
+    margin: 20px 0 5px 25px;
+}
+
+.text-card p{
+    font-weight: 300;
+}
+
+.text-card button{
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
+    color: var(--color-azul-primario);
+    transition: all .5s ease;
+}
+
+.text-card button:hover{
+    text-decoration: underline 2px var(--color-azul-primario);
+}
+
+.card{
+    width: 18rem;
+    color: #000;
+    border: none;
+    box-shadow: 5px 12px 5px rgba(126, 126, 126, 0.658);
+}
+
+.card:hover{
+    transform: scale(1.06);
+}
+
+.card h5{
+    font-size: 1.6em;
+}
+.card p{
+    color: #000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.card-text{
+    text-align: left;
+}
+
+
+.card a{
+    background-color: var(--color-azul-primario);
+    color: #fff;
+}
+
+.card a:hover{
+    transform: scale(1.1);
+    background-color: var(--color-azul-primario);
+    color: #fff;
+    text-decoration: underline;
+}
+
 
 
 /* Estilos  de interaccion */

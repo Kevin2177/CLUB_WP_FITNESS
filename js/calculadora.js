@@ -71,15 +71,32 @@ function actualizarLbl(){
 
 function calcularIMC(){
     limpiarHTML();
-    console.log(peso);
-    console.log(altura);
+
     const IMC = ((peso/Math.pow(altura,2))*10000).toFixed(2);
     
+    // SCRIPTING
     const parrafoIMC = document.createElement('P');
     parrafoIMC.innerHTML = `Tu indice de masa corporal es:   <span class="bold">${IMC} </span>`;
     parrafoIMC.classList.add('text-2xl');
 
+    // Comprobacion del IMC para el su estatus
+    const estatusIMC = document.createElement('P');
+    if(IMC < 18.5){
+        estatusIMC.textContent = 'Bajo de peso';
+        estatusIMC.classList.add('text-red-800','text-xl','py-0.5','bg-yellow-300');
+    }else if(IMC >= 18.5 && IMC <= 24.9){
+        estatusIMC.textContent = 'Saludable';
+        estatusIMC.classList.add('text-black','text-xl','py-0.5','bg-lime-400');
+    }else if(IMC >= 25 && IMC <= 29.9){
+        estatusIMC.textContent = 'Sobre Peso';
+        estatusIMC.classList.add('text-red-800','text-xl','py-0.5','bg-yellow-300');
+    }else if(IMC > 30){
+        estatusIMC.textContent = 'Obesidad';
+        estatusIMC.classList.add('text-red-800','text-xl','py-0.5','bg-red-400');
+    }
+
     divResultado.appendChild(parrafoIMC);
+    divResultado.appendChild(estatusIMC);
 }
 
 const convertirLb = lb => peso = lb * 0.453592;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="font-awesome/css/fontawesome.css">
     <link rel="stylesheet" href="font-awesome/css/solid.css">
     <link rel="stylesheet" href="font-awesome/css/brands.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link rel="shortcut icon" href="./img/icono-pagina.png">
     <title>CLUB WP FITNESS | INICIO</title>
@@ -108,20 +109,24 @@
         <h2 class="mt-16">Servicios</h2>
 
         <div class="servicios-simples w-full">
-            <div class="container flex flex-col justify-center content-center">
+            <div class="container flex flex-col justify-center content-center m-auto">
               <!-- linea con imagen-->
-              <div class="card mx-1/4 justify-evenly flex my-14">
+              <div class="card-simples mx-auto justify-evenly flex my-14">
                   <img src="./img/servicios-1.jpg" alt="" class="w-2/4 h-full object-cover rounded-xl">
-                  <div class="servicios-texto text-center w-1/4 mt-9">
+                  <div class="servicios-texto text-center w-2/4 ml-14 mt-9 overflow-hidden block">
                     <h3>Entrenadores Certificados</h3>
-                    <p>pararararararr...pararararararr...pararararararr...pararararararr...</p>
+                    <p class="break-words">Contamos con instructores completamente capacitados y certificados para la instruccion de ejercicios para multiples deportes.
+                      <span> ¡¡ Cumple tus objetivos y metas !!</span>
+                      <br> Ademas de contar con varios años de experiencia en el ámbito.
+                    </p>
                   </div>
               </div>
+
               <!-- linea con imagen-->
-              <div class="card mx-1/4 justify-evenly flex">
-                <div class="servicios-texto text-center w-1/4">
-                  <h3>Entrenadores Certificados</h3>
-                  <p>pararararararr...</p>
+              <div class="card-simples mx-auto justify-evenly flex my-14">
+                <div class="servicios-texto text-center w-2/4 mr-14 mt-9 overflow-hidden block">
+                  <h3>Equipos</h3>
+                  <p class="break-words">Equipos y maquinaria en muy completos, en excelente estado para que obtengas una buena experiencia al implementarlos en tus entrenamientos.</p>
                 </div>
                 <img src="./img/servicios-1.jpg" alt="" class="w-2/4 h-full object-cover rounded-xl">
               </div>
@@ -129,12 +134,104 @@
             </div>
         </div>
 
-        <div class="servicios-premium">
+        <div class="servicios-premium mt-16">
+          <h2>Servicios personalizados</h2>
+          
+          <div class="container mt-9  grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 justify-items-center">
+            <!-- CARD #1 -->
+            <div class="card mx-4 my-9">
+              <img src="./img/servicios-1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Entrenamiento personalizado</h5>
+                <p class="card-text">Rutinas de entrenamiento personalizadas, acorde a tus obejivos y metas.</p>
+                <p>¡ Rutinas completamente analizadas y efectivas !</p>
+                <a href="#" class="btn mt-1">Cotizar</a>
+              </div>
+            </div>
 
+            <!-- CARD #2 -->
+            <div class="card mx-4 my-9">
+              <img src="./img/servicios-1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Dieta</h5>
+                <p class="card-text">Planes alimenticios formados para todos tus propositos (ganar masa muscular, bajar de peso, recomposición corporal). Así como 
+                  dietas específicas para veganos, vegetarianos, etc.
+                </p>
+                <a href="#" class="btn mt-1">Cotizar</a>
+              </div>
+            </div>
+
+            <!-- CARD #3 -->
+            <div class="card mx-4 my-9">
+              <img src="./img/servicios-1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Asesorías completas</h5>
+                <p class="card-text">Dietas y planes de entrenamientos eficaces para todas las personas. Contamos con chequeos constantes, atención 24/7 para cualquier duda, dietas flexibles y adaptadas y mucho más...</p>
+                <a href="#" class="btn mt-1">Cotizar</a>
+              </div>
+            </div>
+
+
+          </div>
+          
         </div>
+        
     </div>
 
-    <script src="./js/target.js"></script>
+    <div class="page relative mx-auto text-center" id="section-info">
+      <h2 class="mt-16">Más info...</h2>
+
+
+    </div>
+
+    <script src="./js/inicializador.js" type="module"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+<!--
+
+  servicios premium / Estilo anterior
+
+  <div class="container mx-auto mt-9 my-9">
+            <div class="grid gap-3 grid-cols-3">
+
+                <div class="card-premium mx-9  relative">
+                  <img src="./img/servicios-1.jpg" alt="" class="rounded-xl w-full h-52 object-cover">
+                  <div class="text-card text-left">
+                    <h3 class="text-3xl">Entrenamientos personalizados</h3>
+                    <p class="px-6 text-xl tracking-wide mt-4">Planes de entrenamientos personales de acuerdo a tus objetivos, experiencia y capacidades para que obtengas un avance más rapido y con la mejor calidad.</p>
+                    <button id="btnEntrenamientos" class="my-1 absolute bottom-2">Más información</button>
+                  </div>
+                </div>
+                
+                <div class="card-premium mx-9 relative">
+                  <img src="./img/servicios-1.jpg" alt="" class="rounded-xl w-full h-52 object-cover">
+                  <div class="text-card text-left">
+                    <h3 class="text-3xl">Dietas personalizados</h3>
+                    <p class="px-6 text-xl tracking-wide mt-4">Dietas totalmente personalizadas para que puedas cumplir tus metas ya sea: perder peso, ganar masa muscular, ponerte en forma.
+                      Comidas personalizadas a tus preferencias (Vegano, vegetariano, etc...) 
+                      <br><span class="text-2xl">¡ no pierdas el tiempo con dietas estrictas !</span> 
+                    </p>
+                    <button id="btnDietas" class="my-1 absolute bottom-2">Más información</button>
+                  </div>
+                </div>
+
+                <div class="card-premium mx-9 relative">
+                  <img src="./img/servicios-1.jpg" alt="" class="rounded-xl w-full h-52 object-cover">
+                  <div class="text-card text-left">
+                    <h3 class="text-3xl">Asesorias completas</h3>
+                    <p class="px-6 text-xl tracking-wide mt-4">Dietas y entrenamientos ambos hechos con delicadeza y planteados perfectamente a tus medidas y a tus metas,
+                      monitoreando tu progreso constantemente. <br> <span class="text-2xl">Mejora tu salud y estado físico</span> 
+                    </p>
+                    <button id="btnConsultorias" class="my-1 absolute bottom-2">Más información</button>
+                  </div>
+                </div>
+
+                  
+            </div>
+          </div>
+-->

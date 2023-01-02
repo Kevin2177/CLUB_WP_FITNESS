@@ -1,21 +1,11 @@
-const links = document.querySelectorAll('.menu a');
+import { links } from './inicializador.js';
+
 const paginaInicio = document.querySelector('#section-inicio');
 const paginaInstalaciones = document.querySelector('#section-instalaciones');
 const paginaServicios = document.querySelector('#section-servicios');
-
 const body = document.querySelector('#body');
 
-
-eventos();
-function eventos(){
-    links[0].addEventListener('click',cambiarTarget);
-    links[1].addEventListener('click',cambiarTarget);
-    links[2].addEventListener('click',cambiarTarget);
-
-    comprobarPaginaAbierta();
-}
-
-function cambiarTarget(e){
+export function cambiarTarget(e){
     e.preventDefault();
 
     if(e.target.textContent === 'Inicio'){
@@ -39,7 +29,7 @@ function cambiarTarget(e){
     comprobarPaginaAbierta();
 }
 
-function comprobarPaginaAbierta(){
+export function comprobarPaginaAbierta(){
     if(paginaInicio.classList.contains('page-activa')){
         links[0].classList.add('link-activo');
         links[1].classList.remove('link-activo');
